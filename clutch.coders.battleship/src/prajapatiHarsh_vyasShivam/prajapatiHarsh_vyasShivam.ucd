@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1058,1101" id="prajapatiHarsh_vyasShivam" metadata="uml2-1.0" initialized="true" scrolledX="34" scrolledY="270" tag="10" key="32303037303533312D313020636C757463682E636F646572732E626174746C6573686970">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2 //@children.3/@sourceConnections.0" name="Update" location="50,554" size="115,103" id="prajapatiHarsh_vyasShivam/Update" runTimeClassModel="updateBoard(ILjava.lang.String;II),Update(LprajapatiHarsh_vyasShivam.Grid;),createBoard(Ljavax.swing.JLabel;Ljavax.swing.JLabel;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Update" id="prajapatiHarsh_vyasShivam/Update#Update(LprajapatiHarsh_vyasShivam.Grid;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createBoard" id="prajapatiHarsh_vyasShivam/Update#createBoard(Ljavax.swing.JLabel;Ljavax.swing.JLabel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateBoard" id="prajapatiHarsh_vyasShivam/Update#updateBoard(ILjava.lang.String;II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/Update->prajapatiHarsh_vyasShivam/Grid*prajapatiHarsh_vyasShivam/Update-Soyatec::Import->prajapatiHarsh_vyasShivam/Grid" source="//@children.0" target="//@children.4" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,23" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,259"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="BattleshipPanel" location="614,577" size="152,301" id="prajapatiHarsh_vyasShivam/BattleshipPanel" runTimeClassModel="lblPlayer1,comp,removeShipBtn(),BattleshipPanel(),lblComp,ship,update,lblInfo,grid,lblP1,btnPlay,btnPlaceShips,lblTitle,lblAI">
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,216">
+      <children xsi:type="editmodel:AttributeEditModel" name="btnPlaceShips" id="prajapatiHarsh_vyasShivam/BattleshipPanel#btnPlaceShips"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="btnPlay" id="prajapatiHarsh_vyasShivam/BattleshipPanel#btnPlay"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="comp" id="prajapatiHarsh_vyasShivam/BattleshipPanel#comp"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grid" id="prajapatiHarsh_vyasShivam/BattleshipPanel#grid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblAI" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblAI"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblComp" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblComp"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblInfo" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblInfo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblP1" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblP1"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblPlayer1" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblPlayer1"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lblTitle" id="prajapatiHarsh_vyasShivam/BattleshipPanel#lblTitle"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ship" id="prajapatiHarsh_vyasShivam/BattleshipPanel#ship"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="update" id="prajapatiHarsh_vyasShivam/BattleshipPanel#update"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,36">
+      <children xsi:type="editmodel:MethodEditModel" name="BattleshipPanel" id="prajapatiHarsh_vyasShivam/BattleshipPanel#BattleshipPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeShipBtn" id="prajapatiHarsh_vyasShivam/BattleshipPanel#removeShipBtn()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/BattleshipPanel->prajapatiHarsh_vyasShivam/Ships*prajapatiHarsh_vyasShivam/BattleshipPanel-Soyatec::Import->prajapatiHarsh_vyasShivam/Ships" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,13" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,103"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/BattleshipPanel->prajapatiHarsh_vyasShivam/AI*prajapatiHarsh_vyasShivam/BattleshipPanel-Soyatec::Import->prajapatiHarsh_vyasShivam/AI" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,139"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/BattleshipPanel->prajapatiHarsh_vyasShivam/Update*prajapatiHarsh_vyasShivam/BattleshipPanel-Soyatec::Import->prajapatiHarsh_vyasShivam/Update" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,40" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,63"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/BattleshipPanel->prajapatiHarsh_vyasShivam/Grid*prajapatiHarsh_vyasShivam/BattleshipPanel-Soyatec::Import->prajapatiHarsh_vyasShivam/Grid" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,12" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,271"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1 //@children.4/@sourceConnections.0" name="AI" location="808,72" size="115,139" id="prajapatiHarsh_vyasShivam/AI" runTimeClassModel="missile(),AI(LprajapatiHarsh_vyasShivam.Grid;),countDown,countUp,placeShips()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="countDown" id="prajapatiHarsh_vyasShivam/AI#countDown"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="countUp" id="prajapatiHarsh_vyasShivam/AI#countUp"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="83,54">
+      <children xsi:type="editmodel:MethodEditModel" name="AI" id="prajapatiHarsh_vyasShivam/AI#AI(LprajapatiHarsh_vyasShivam.Grid;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="missile" id="prajapatiHarsh_vyasShivam/AI#missile()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="placeShips" id="prajapatiHarsh_vyasShivam/AI#placeShips()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/AI->prajapatiHarsh_vyasShivam/Ships*prajapatiHarsh_vyasShivam/AI-Soyatec::Import->prajapatiHarsh_vyasShivam/Ships*prajapatiHarsh_vyasShivam/AI->prajapatiHarsh_vyasShivam/Ships" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,40" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,62"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/AI->prajapatiHarsh_vyasShivam/Grid*prajapatiHarsh_vyasShivam/AI-Soyatec::Import->prajapatiHarsh_vyasShivam/Grid" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,96" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,55"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.1/@sourceConnections.0" name="Ships" location="285,50" size="115,103" id="prajapatiHarsh_vyasShivam/Ships" runTimeClassModel="update,selectShips(II),Ships(LprajapatiHarsh_vyasShivam.Grid;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="update" id="prajapatiHarsh_vyasShivam/Ships#update"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Ships" id="prajapatiHarsh_vyasShivam/Ships#Ships(LprajapatiHarsh_vyasShivam.Grid;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectShips" id="prajapatiHarsh_vyasShivam/Ships#selectShips(II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/Ships->prajapatiHarsh_vyasShivam/Update*prajapatiHarsh_vyasShivam/Ships-Soyatec::Import->prajapatiHarsh_vyasShivam/Update*prajapatiHarsh_vyasShivam/Ships->prajapatiHarsh_vyasShivam/Update" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/Ships->prajapatiHarsh_vyasShivam/Grid*prajapatiHarsh_vyasShivam/Ships-Soyatec::Import->prajapatiHarsh_vyasShivam/Grid" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="23,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.1/@sourceConnections.3 //@children.3/@sourceConnections.1 //@children.0/@sourceConnections.0" name="Grid" location="404,318" size="158,283" id="prajapatiHarsh_vyasShivam/Grid" runTimeClassModel="getBtn(I),setLblColor(I),setBtnColor(I),removePlaceShipsBtn(),Grid(Ljavax.swing.JButton;Ljavax.swing.JLabel;),enableBtns(),getLbl(I),getP1ShipSize(),addAILocation(I),createBoard(Ljavax.swing.JLabel;Ljavax.swing.JLabel;),addP1Location(I),getShipLocation(I),disableBtns()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,234">
+      <children xsi:type="editmodel:MethodEditModel" name="Grid" id="prajapatiHarsh_vyasShivam/Grid#Grid(Ljavax.swing.JButton;Ljavax.swing.JLabel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addAILocation" id="prajapatiHarsh_vyasShivam/Grid#addAILocation(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addP1Location" id="prajapatiHarsh_vyasShivam/Grid#addP1Location(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createBoard" id="prajapatiHarsh_vyasShivam/Grid#createBoard(Ljavax.swing.JLabel;Ljavax.swing.JLabel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="disableBtns" id="prajapatiHarsh_vyasShivam/Grid#disableBtns()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enableBtns" id="prajapatiHarsh_vyasShivam/Grid#enableBtns()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBtn" id="prajapatiHarsh_vyasShivam/Grid#getBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLbl" id="prajapatiHarsh_vyasShivam/Grid#getLbl(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getP1ShipSize" id="prajapatiHarsh_vyasShivam/Grid#getP1ShipSize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getShipLocation" id="prajapatiHarsh_vyasShivam/Grid#getShipLocation(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removePlaceShipsBtn" id="prajapatiHarsh_vyasShivam/Grid#removePlaceShipsBtn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBtnColor" id="prajapatiHarsh_vyasShivam/Grid#setBtnColor(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLblColor" id="prajapatiHarsh_vyasShivam/Grid#setLblColor(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/Grid->prajapatiHarsh_vyasShivam/AI*prajapatiHarsh_vyasShivam/Grid-Soyatec::Import->prajapatiHarsh_vyasShivam/AI" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,75" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,116"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BattleshipDriver" location="895,1014" size="143,67" id="prajapatiHarsh_vyasShivam/BattleshipDriver" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="prajapatiHarsh_vyasShivam/BattleshipDriver#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="prajapatiHarsh_vyasShivam/BattleshipDriver->prajapatiHarsh_vyasShivam/BattleshipPanel" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="43,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="152,238"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
