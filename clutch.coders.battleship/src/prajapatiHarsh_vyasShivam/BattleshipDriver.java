@@ -2,6 +2,13 @@ package prajapatiHarsh_vyasShivam;
 
 import javax.swing.JFrame;
 
+/**
+ * Creates the frame and adds a panel in the frame
+ * Organizes the layout and makes the frame visible
+ * 
+ * @author Harsh Prajapati and Shivam Vyas
+ *
+ */
 public class BattleshipDriver {
 
 	public static void main (String [] args){
@@ -11,5 +18,7 @@ public class BattleshipDriver {
 		frame.getContentPane().add(new BattleshipPanel());
 		frame.pack();
 		frame.setVisible(true);
+		
 	}
+	
 }
