@@ -6,7 +6,14 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.Random;
 
-
+/**
+ * Code for AI
+ * Decides how the AI should make It's move
+ * checks if the AI has won
+ * 
+ * @author Harsh Prajapati and Shivam Vyas
+ *
+ */
 public class AI {
 
 	private Grid grid;
@@ -21,13 +28,20 @@ public class AI {
 	private boolean goRight;
 	private boolean goLeft;
 
-	int countUp = 0;
-	int countDown = 0;
+	private int countUp = 0;
+	private int countDown = 0;
 
+	/**
+	 * initializes the Grid object by the given object in the parameteres
+	 * @param grid
+	 */
 	public AI(Grid grid) {
 		this.grid = grid;
 	}
 
+	/**
+	 * AI placed all 5 ships one by one
+	 */
 	public void placeShips() {
 		Ships ship = new Ships(grid);
 		for (int i = 0; i < 5; i++) {
@@ -35,7 +49,11 @@ public class AI {
 		}
 	}
 
-	public void missile() throws InterruptedException {
+	/**
+	 * decides where the AI should shoot
+	 * decides what to do if the AI wins
+	 */
+	public void missile(){
 
 		if (!hit && !goDown && !goUp && !goRight && !goLeft) {
 			getRand();
@@ -70,19 +88,26 @@ public class AI {
 		lblHit.add(randNum);
 		checkHit();
 
-		System.out.println(randNum);
 		if(AIWin()){
 			JOptionPane.showMessageDialog(null, "Aww The Computer Won!\nPress OK to Quit");
 			System.exit(0);
 		}
 	}
 	
+	/**
+	 * checks if the AI won
+	 * @return
+	 */
 	private boolean AIWin() {
 		if(totalHits == 16){
 			return true;
 		}
 		return false;
 	}
+	
+	/**
+	 * decides what happens when the player hits a ship and what happens when the player misses
+	 */
 	private void checkHit() {
 		if (randNum >= 100 || randNum < 0) {
 			getRand();
@@ -97,6 +122,9 @@ public class AI {
 		}
 	}
 
+	/**
+	 * gets a random position for the AI to hit
+	 */
 	private void getRand() {
 		goLeft = false;
 		goUp = false;
@@ -107,6 +135,9 @@ public class AI {
 		}
 	}
 
+	/**
+	 * if the AI hits a position where there is a part of a ship, it will go down
+	 */
 	private void goDown() {
 		goDown = true;
 		goUp = false;
@@ -133,6 +164,10 @@ public class AI {
 
 	}
 
+	/**
+	 * AI will hit above the previous hit location
+	 * if the AI missed while it was going down, it will go upwards
+	 */
 	private void goUp() {
 		goUp = true;
 		goDown = false;
@@ -156,6 +191,10 @@ public class AI {
 		}
 	}
 
+	/**
+	 * the AI will hit on the right of the previously hit position
+	 * if it missed while going up, it will hit to the right
+	 */
 	private void goRight() {
 		goDown = false;
 		goLeft = false;
@@ -172,6 +211,10 @@ public class AI {
 		}
 	}
 
+	/**
+	 * the AI will hit left of the previously hit target
+	 * if the AI missed while going right, it will hit left
+	 */
 	private void goLeft() {
 		goLeft = true;
 		goRight = false;
@@ -189,6 +232,11 @@ public class AI {
 
 	}
 
+	/**
+	 * checks if the position selected by the AI is valid
+	 * @param randNum
+	 * @return
+	 */
 	private boolean validNum(int randNum) {
 
 		for (int i : lblHit) {
