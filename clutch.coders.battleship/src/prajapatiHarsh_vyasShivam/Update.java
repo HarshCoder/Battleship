@@ -2,18 +2,42 @@ package prajapatiHarsh_vyasShivam;
 
 import javax.swing.JLabel;
 
+/**
+ * updates the grid with the ships placed by the player and the AI
+ * @author Harsh
+ *
+ */
 public class Update {
 
 	private Grid grid;
 	
+	/**
+	 * initializes the instance Object by the object given in the parameters
+	 * @param grid
+	 */
 	public Update(Grid grid){
 		this.grid = grid;
 	}
 	
+	/**
+	 * creates the grid layout of the player and AI by calling on the Grid class
+	 * @param lblP1
+	 * @param lblAI
+	 */
 	public void createBoard(JLabel lblP1, JLabel lblAI) {
 		grid.createBoard(lblP1, lblAI);
 	}
 	
+	/**
+	 * updates the board with the ships
+	 * position, length and rotation are given in by the Player
+	 * AI selects the position length and rotation randomly
+	 * @param position
+	 * @param rotation
+	 * @param length
+	 * @param player
+	 * @return
+	 */
 	public boolean updateBoard(int position, String rotation, int length, int player) {
 		// Setting the Ships According to the Position given by the User.
 		if (position > 0 && rotation != null) {
