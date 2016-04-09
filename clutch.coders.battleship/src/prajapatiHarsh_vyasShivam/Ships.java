@@ -4,6 +4,14 @@ import java.awt.Color;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
+/**
+ * Allows Player and AI to place their ships
+ * checks if the places they want to put the ships are valid
+ * removes a ship from the option when it has already been placed
+ * 
+ * @author Harsh Prajapati and Shivam Vyas
+ *
+ */
 public class Ships {
 
 	private String[] shipList = { "(5) Aircraft Carrier", "(4) Battle Ship", "(3) Cruiser", "(3) Submarine", "(1) Destroyer" };
@@ -12,13 +20,23 @@ public class Ships {
 	private String[] shipRotations = { "UP", "DOWN", "LEFT", "RIGHT" };
 	private Random rand = new Random();
 	private Grid grid;
-	Update update;
+	private Update update;
 
+	/**
+	 * initalizes the Grid class object
+	 * creates a new Update class object
+	 * @param grid
+	 */
 	public Ships(Grid grid) {
 		this.grid = grid;
 		update = new Update(grid);
 	}
 
+	/**
+	 * removes the ship from the options when it has been placed on the grid
+	 * @param shipList
+	 * @param shipType
+	 */
 	private void removeShip(String[] shipList, String shipType) {
 		for (int i = 0; i < shipList.length; i++) {
 			if (shipList[i].equals(shipType)) {
@@ -27,6 +45,12 @@ public class Ships {
 		}
 	}
 
+	/**
+	 * asks the user which ship they want to place using a pop-up menu
+	 * AI selects the ships in the order of them in the array
+	 * @param a
+	 * @param ship
+	 */
 	public void selectShips(int a, int ship) {
 		this.player = a;
 		if (player == 1) {
@@ -52,6 +76,14 @@ public class Ships {
 		}
 	}
 
+	/**
+	 * asks for which direction the user wants the ships in using another popup
+	 * checks if the the location and the direction of the ship is valid
+	 * AI selects a random location on the grid
+	 * @param length
+	 * @param shipList
+	 * @param shipType
+	 */
 	private void arrangeShips(int length, String[] shipList, String shipType) {
 		String rotation = "";
 		int position = 0;
@@ -96,14 +128,20 @@ public class Ships {
 
 		}
 
-		
+		// the the player has finished placing ships, the "Place Ships" button gets removed
 		if(grid.getP1ShipSize() == 16){
-			System.out.println(grid.getP1ShipSize());
 			grid.removePlaceShipsBtn();
 			grid.enableBtns();
 		}
 	}
 
+	/**
+	 * checks if the ship overlaps with another ship or goes outside the grid
+	 * @param position
+	 * @param length
+	 * @param rotation
+	 * @return
+	 */
 	private boolean isValid(int position, int length, String rotation) {
 
 		int directionEquation = 0;
@@ -184,6 +222,14 @@ public class Ships {
 		return true;
 	}
 
+	/**
+	 * checks if the ship is going out side the grid
+	 * @param directionEquation
+	 * @param length
+	 * @param position
+	 * @param direction
+	 * @return
+	 */
 	private boolean isOutOfBounce(int directionEquation, int length, int position, String direction) {
 		//For Up or Down Check
 		if (directionEquation < 0 || directionEquation > 99) {
@@ -229,6 +275,10 @@ public class Ships {
  		return false;
 	}
 
+	/**
+	 * asks where the user wants to place their ships and checks if the user entered a valid value
+	 * @return
+	 */
 	private int getPosition() {
 		int position = 0;
 		boolean valid = false;
