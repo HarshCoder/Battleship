@@ -109,8 +109,11 @@ public class AI {
 	 * decides what happens when the player hits a ship and what happens when the player misses
 	 */
 	private void checkHit() {
-		if (randNum >= 100 || randNum < 0) {
-			getRand();
+		if (randNum >= 100) {
+			goLeft();
+		}
+		if(randNum<0){
+			goRight();
 		}
 		if (grid.getLbl(randNum).getBackground() == Color.gray) {
 			grid.getLbl(randNum).setBackground(Color.red);
@@ -205,7 +208,7 @@ public class AI {
 			if (randNum >= 0 && randNum < 100) {
 				randNum += 1;
 			}
-			if (randNum > 100) {
+			if (randNum >= 100) {
 				goLeft();
 			}
 		}
@@ -222,7 +225,7 @@ public class AI {
 		goDown = false;
 
 		while (!validNum(randNum)) {
-			if (randNum >= 0 && randNum < 100) {
+			if (randNum >= 0) {
 				randNum -= 1;
 			}
 			if (randNum < 0) {
