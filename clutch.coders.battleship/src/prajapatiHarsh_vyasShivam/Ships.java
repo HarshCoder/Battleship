@@ -291,7 +291,7 @@ public class Ships {
 						valid = true;
 					} else {
 						JOptionPane.showMessageDialog(null,
-								"Please Enter a positive and valid location ranging from 0 - 100!");
+								"Please Enter a positive and valid location ranging from 1 - 100!");
 					}
 				} catch (Exception e) {
 					JOptionPane.showMessageDialog(null, "Please Enter a Valid Loction!");
