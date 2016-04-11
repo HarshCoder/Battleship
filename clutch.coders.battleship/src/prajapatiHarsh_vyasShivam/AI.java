@@ -98,7 +98,7 @@ public class AI {
 	 * checks if the AI won
 	 * @return
 	 */
-	private boolean AIWin() {
+	public boolean AIWin() {
 		if(totalHits == 16){
 			return true;
 		}
@@ -108,7 +108,7 @@ public class AI {
 	/**
 	 * decides what happens when the player hits a ship and what happens when the player misses
 	 */
-	private void checkHit() {
+	public void checkHit() {
 		if (randNum >= 100) {
 			goLeft();
 		}
@@ -128,7 +128,7 @@ public class AI {
 	/**
 	 * gets a random position for the AI to hit
 	 */
-	private void getRand() {
+	public void getRand() {
 		goLeft = false;
 		goUp = false;
 		goRight = false;
@@ -141,7 +141,7 @@ public class AI {
 	/**
 	 * if the AI hits a position where there is a part of a ship, it will go down
 	 */
-	private void goDown() {
+	public void goDown() {
 		goDown = true;
 		goUp = false;
 		goRight = false;
@@ -171,7 +171,7 @@ public class AI {
 	 * AI will hit above the previous hit location
 	 * if the AI missed while it was going down, it will go upwards
 	 */
-	private void goUp() {
+	public void goUp() {
 		goUp = true;
 		goDown = false;
 		goRight = false;
@@ -198,7 +198,7 @@ public class AI {
 	 * the AI will hit on the right of the previously hit position
 	 * if it missed while going up, it will hit to the right
 	 */
-	private void goRight() {
+	public void goRight() {
 		goDown = false;
 		goLeft = false;
 		goRight = true;
@@ -218,7 +218,7 @@ public class AI {
 	 * the AI will hit left of the previously hit target
 	 * if the AI missed while going right, it will hit left
 	 */
-	private void goLeft() {
+	public void goLeft() {
 		goLeft = true;
 		goRight = false;
 		goUp = false;
@@ -240,7 +240,7 @@ public class AI {
 	 * @param randNum
 	 * @return
 	 */
-	private boolean validNum(int randNum) {
+	public boolean validNum(int randNum) {
 
 		for (int i : lblHit) {
 			if (i == randNum) {
