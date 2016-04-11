@@ -188,8 +188,7 @@ public class Grid {
 		private int i;
 
 		/**
-		 * sets an instance variable to the given parameter parameter is the
-		 * location of a button in the arraylist
+		 * sets an instance variable which is the location of a button in the arraylist
 		 * 
 		 * @param i
 		 */
@@ -199,15 +198,15 @@ public class Grid {
 
 		/**
 		 * checks if there is a ship in the specified location given in the
-		 * parameters
+		 * parameter
 		 * 
 		 * @param location
 		 * @return
 		 */
 		public boolean ship(int location) {
 
-			for (int a : shipsAI) {
-				if (a == location) {
+			for (int element : shipsAI) {
+				if (element == location) {
 					return true;
 				}
 			}
