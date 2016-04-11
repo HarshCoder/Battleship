@@ -37,7 +37,7 @@ public class Ships {
 	 * @param shipList
 	 * @param shipType
 	 */
-	private void removeShip(String[] shipList, String shipType) {
+	public void removeShip(String[] shipList, String shipType) {
 		for (int i = 0; i < shipList.length; i++) {
 			if (shipList[i].equals(shipType)) {
 				shipList[i] = shipType + " is Used!";
@@ -84,7 +84,7 @@ public class Ships {
 	 * @param shipList
 	 * @param shipType
 	 */
-	private void arrangeShips(int length, String[] shipList, String shipType) {
+	public void arrangeShips(int length, String[] shipList, String shipType) {
 		String rotation = "";
 		int position = 0;
 		boolean repeat = true;
@@ -142,7 +142,7 @@ public class Ships {
 	 * @param rotation
 	 * @return
 	 */
-	private boolean isValid(int position, int length, String rotation) {
+	public boolean isValid(int position, int length, String rotation) {
 
 		int directionEquation = 0;
 		if (rotation != null) {
@@ -230,7 +230,7 @@ public class Ships {
 	 * @param direction
 	 * @return
 	 */
-	private boolean isOutOfBounce(int directionEquation, int length, int position, String direction) {
+	public boolean isOutOfBounce(int directionEquation, int length, int position, String direction) {
 		//For Up or Down Check
 		if (directionEquation < 0 || directionEquation > 99) {
  			return true;
@@ -279,7 +279,7 @@ public class Ships {
 	 * asks where the user wants to place their ships and checks if the user entered a valid value
 	 * @return
 	 */
-	private int getPosition() {
+	public int getPosition() {
 		int position = 0;
 		boolean valid = false;
 		while (!valid) {
