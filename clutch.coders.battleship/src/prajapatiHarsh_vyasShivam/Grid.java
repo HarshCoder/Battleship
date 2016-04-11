@@ -204,7 +204,7 @@ public class Grid {
 		 * @param location
 		 * @return
 		 */
-		private boolean ship(int location) {
+		public boolean ship(int location) {
 
 			for (int a : shipsAI) {
 				if (a == location) {
@@ -248,7 +248,7 @@ public class Grid {
 	 * 
 	 * @return
 	 */
-	private boolean playerWin() {
+	public boolean playerWin() {
 		int count = 0;
 		for (JButton element : btns) {
 			if (element.getBackground() == Color.red) {
